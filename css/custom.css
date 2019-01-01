@@ -1,0 +1,13 @@
+.foodbox{
+	text-transform: none !important;
+}
+.ui-menu{
+	height: 150px !important;
+	overflow-y: auto;
+}
+.tag{
+	text-align: center;
+}
+.filterBox{
+	padding: 20px 30px;
+}
