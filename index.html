@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Ritu Jain - Dietitian</title>
+    <meta name="description" content="Best Diet & Nutrition Expert ✓ Weight Loss & Gain ✓ Acupunture & Acupressure ✓ Balanced Diet ✓ Pregnancy Diets near you in Lokhandwala, Andheri Mumbai, ( Bombay ).">
+    <meta name="keywords" content="Dietitian, Naturopath, Cupping, Acupressure, Acupressure, Weight loss, Weight Gain, Balanced Diet, Pregnancy, Nutrition">
+    <title>Dr.Ritu Jain - Naturopath & Dietitian</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Style CSS -->
@@ -27,6 +27,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+        html{
+            scroll-behavior: smooth;
+        }
         .holder{
             background: #fff;
             padding: 20px 80px 20px 80px;
@@ -39,7 +42,7 @@
     <div class="header-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
                     <!-- <a href="index-2.html"><img src="images/logo.png" alt=""></a> -->
                 </div>
                 <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
@@ -47,17 +50,17 @@
                         <div id="navigation">
                             <ul>
                                 <li class="active"><a href="#" title="Home">Home</a></li>
-                                <li><a href="#" title="My service">my service</a> </li>
-                                <li><a href="#" title="About me">About me</a> </li>
+                                <li><a href="#service" title="My service">My service</a> </li>
+                                <li><a href="#about" title="About me">About me</a> </li>
                                 
-                                <li><a href="#" title="Contact Us">Contact Us</a>
+                                <li><a href="#contact" title="Contact Us">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
-                    <div class="header-btn"><a href="#" class="btn btn-default">get started</a></div>
+                <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <div class="header-btn"><a href="book.html" class="btn btn-default">book appointment</a></div>
                 </div>
             </div>
         </div>
@@ -79,7 +82,7 @@
                                         Create Lean &amp; Healthy Body For Life
                                     </h1>
                                     <p class="slider-text hidden-xs">Create Lean | Healthy Body | Healthy Life</p>
-                                    <a href="#" class="btn btn-default btn-lg hidden-sm hidden-xs">View My Services</a>
+                                    <a href="#service" class="btn btn-default btn-lg hidden-sm hidden-xs">View My Services</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +110,7 @@ TOGETHER</h1>
     </div>
     <!-- slider-close -->
     <!-- service-start -->
-    <div class="space-medium bg-light">
+    <div class="space-medium bg-light " id="service">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -244,7 +247,7 @@ TOGETHER</h1>
         </div>
     </div>
     <!-- diet-plan-close -->
-    <div class="space-medium">
+    <div class="space-medium" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
@@ -430,7 +433,7 @@ eating</h2>
     </div>
     <!-- testimonials-close  -->
     <!-- footer start -->
-    <div class="footer">
+    <div class="footer" id="contact">
         <div class="container">
             <div class="row">
                 <!-- footer-about-start -->
@@ -452,12 +455,9 @@ eating</h2>
                     <div class="footer-widget">
                         <h3 class="footer-title">Quick Links</h3>
                         <ul class="angle angle-right">
-                            <li><a href="#">Home </a></li>
-                            <li><a href="#">Service </a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Diet Plans </a></li>
-                            <li> <a href="#">Blog</a></li>
-                            <li> <a href="#">Testimonials</a></li>
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="index.html#service">Service </a></li>
+                            <li><a href="index.html#about">About me</a></li>
                         </ul>
                     </div>
                 </div>
@@ -509,6 +509,32 @@ eating</h2>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/testimonial-slider.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top + "500px"
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </body>
 
 
